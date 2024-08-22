@@ -1,0 +1,27 @@
+<form [formGroup]="busForm" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <input matInput placeholder="Driver Name" formControlName="driverName">
+    <mat-error *ngIf="busForm.get('driverName')?.hasError('required')">
+      Driver Name is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Driver Phone Number" formControlName="driverPhoneNumber">
+    <mat-error *ngIf="busForm.get('driverPhoneNumber')?.hasError('required')">
+      Driver Phone Number is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Bus Stop Station" formControlName="busStopStation">
+    <mat-error *ngIf="busForm.get('busStopStation')?.hasError('required')">
+      Bus Stop Station is required
+    </mat-error>
+  </mat-form-field>
+
+  <!-- Add more form fields here as needed -->
+
+  <button mat-raised-button color="primary" type="submit">Update Bus</button>
+  <button mat-button color="warn" type="button" (click)="onCancel()">Cancel</button>
+</form>

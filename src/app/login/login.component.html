@@ -1,0 +1,14 @@
+<div class="login-container">
+    <h2>Welcome to Eva, Please Login</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <label for="username">Username:</label>
+        <input id="username" type="text" #username />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input id="password" type="password" #password />
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>

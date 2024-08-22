@@ -1,0 +1,52 @@
+
+<div class="container">
+    <h2>Add New Bus</h2>
+    <form [formGroup]="busForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill">
+        <mat-label>Driver Name</mat-label>
+        <input matInput formControlName="DriverName" required>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Driver Phone Number</mat-label>
+        <input matInput formControlName="DriverPhoneNumber" required>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Bus Stop Station</mat-label>
+        <input matInput formControlName="BusStopStation" required>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Car Number</mat-label>
+        <input matInput formControlName="CarNumber">
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Bus Capacity</mat-label>
+        <input matInput formControlName="BusCapacity">
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Car Model</mat-label>
+        <input matInput formControlName="CarModel">
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Bus Line Stops</mat-label>
+        <input matInput formControlName="BusLineStops">
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Bus Type</mat-label>
+        <input matInput formControlName="BusType">
+      </mat-form-field>
+  
+      <div class="form-actions">
+        <button mat-raised-button color="primary" type="submit">Save</button>
+        <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+      </div>
+    </form>
+  </div>
+  
+  

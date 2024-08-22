@@ -1,0 +1,26 @@
+mat-header-cell, mat-cell {
+    padding: 12px;
+    text-align: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  mat-cell {
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  }
+  
+  .enhanced-table {
+    table-layout: auto; /* Allow columns to adjust based on content */
+    width: 100%;
+  }
+  mat-stroked-button {
+    padding: 4px 8px; /* Reduced padding for better fit */
+    margin-right: 4px;
+    border-radius: 4px;
+  }
+  .action-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 8px;
+  }
+    

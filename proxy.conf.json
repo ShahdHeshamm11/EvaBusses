@@ -1,0 +1,8 @@
+{
+    "/api": {
+      "target": "http://georginaboules-001-site1.ltempurl.com",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+  }

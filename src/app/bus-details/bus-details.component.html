@@ -1,0 +1,24 @@
+
+<div class="container">
+    <h2>Bus Details</h2>
+    <div *ngIf="bus">
+      <p><strong>ID:</strong> {{bus.id}}</p>
+      <p><strong>Driver Name:</strong> {{bus.driverName}}</p>
+      <p><strong>Driver Phone Number:</strong> {{bus.driverPhoneNumber}}</p>
+      <p><strong>Bus Stop Station:</strong> {{bus.busStopStation}}</p>
+      <p><strong>Car Number:</strong> {{bus.carNumber}}</p>
+      <p><strong>Bus Capacity:</strong> {{bus.busCapacity}}</p>
+      <p><strong>Car Model:</strong> {{bus.carModel}}</p>
+      <p><strong>Bus Line Stops:</strong> {{bus.busLineStops}}</p>
+      <p><strong>Bus Type:</strong> {{bus.busType}}</p>
+      <p><strong>Is Deleted:</strong> {{bus.isDeleted}}</p>
+      <p><strong>Created On:</strong> {{bus.createdOn}}</p>
+      <p><strong>Created By:</strong> {{bus.createdById}}</p>
+      <p><strong>Updated On:</strong> {{bus.updatedOn}}</p>
+      <p><strong>Updated By:</strong> {{bus.updatedById}}</p>
+    </div>
+    <div class="form-actions">
+      <button mat-raised-button color="primary" (click)="onBack()">Back to List</button>
+    </div>
+  </div>
+  
